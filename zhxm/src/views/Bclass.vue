@@ -305,16 +305,16 @@ export default {
           }
         })
         .then(response => {
-            that.form1 = response.data.data;
+            // that.form1 = response.data.data;
           if (response.data.code == "200") {
             that.$message({
               type: "success",
               message: "修改成功"
             });
-            that.form1 = {
-              className2: "",
-              classTeacherId2: []
-            };
+            // that.form1 = {
+            //   className2: "",
+            //   classTeacherId2: []
+            // };
             that.dialogFormVisible2 = false;
             that.xians();
           } else {

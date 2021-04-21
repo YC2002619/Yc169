@@ -8,6 +8,9 @@ import Bdormitory from './views/Bdormitory.vue'
 import Bstudent from './views/Bstudent.vue'
 import Sdhygiene from './views/Sdhygiene.vue'
 import Sddevice from './views/Sddevice.vue'
+import Sdattence from './views/Sdattence.vue'
+import Sdleave from './views/Sdleave.vue'
+import Sdattenceexception from './views/Sdattenceexception.vue'
 
 Vue.use(Router)
 
@@ -46,6 +49,18 @@ export default new Router({
         {
           path:'/sddevice',
           component:Sddevice
+        },
+        {
+          path:'/sdattence',
+          component:Sdattence
+        },
+        {
+          path:'/sdleave',
+          component:Sdleave
+        },
+        {
+          path:'/sdattenceexception',
+          component:Sdattenceexception
         }
       ]
     }
