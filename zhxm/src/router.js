@@ -6,6 +6,8 @@ import Shouye from './views/Shouye.vue'
 import Bclass from './views/Bclass.vue'
 import Bdormitory from './views/Bdormitory.vue'
 import Bstudent from './views/Bstudent.vue'
+import Sdhygiene from './views/Sdhygiene.vue'
+import Sddevice from './views/Sddevice.vue'
 
 Vue.use(Router)
 
@@ -36,6 +38,14 @@ export default new Router({
         {
           path:'/bstudent',
           component:Bstudent
+        },
+        {
+          path:'/sdhygiene',
+          component:Sdhygiene
+        },
+        {
+          path:'/sddevice',
+          component:Sddevice
         }
       ]
     }

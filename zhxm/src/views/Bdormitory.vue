@@ -352,9 +352,6 @@ export default {
           console.log(error);
         });
     },
-    // handleSelectionChange(val) {
-    //   this.multipleSelection = val;
-    // },
 
     xians() {
       var that = this;
@@ -376,8 +373,7 @@ export default {
       var that = this;
       this.axios({
         url:
-          "http://122.112.253.28:8095/prod-api/basedata/bdormitory/deleteByIds/" +
-          id,
+          "http://122.112.253.28:8095/prod-api/basedata/bdormitory/deleteByIds/" +id,
         method: "DELETE",
         headers: {
           Authorization: window.sessionStorage.token
@@ -550,10 +546,6 @@ export default {
         this.$refs.multipleTable.clearSelection();
       }
     },
-
-    // handleSelectionChange(val) {
-    //   this.multipleSelection = val;
-    // }
   }
 };
 </script>

@@ -13,13 +13,13 @@
             <img src="../assets/2.png" alt class="tp1" />
             <span class="sp1">智慧宿管云平台</span>
           </MenuItem>
-          <MenuItem name="3-1" to="/shouye">
+          <MenuItem name="6-1" to="/shouye">
             <Icon type="ios-navigate"></Icon>
             <span>首页</span>
           </MenuItem>
           <Submenu :name="key+2" v-for="(item, key) in list" :key="key">
             <template slot="title">
-              <Icon type="ios-navigate"></Icon>
+               <Icon type="ios-navigate"></Icon>
               <span>{{item.meta.title}}</span>
             </template>
             <MenuItem
@@ -108,6 +108,7 @@ export default {
           console.log(error);
         });
     },
+    
     collapsedSider() {
       this.$refs.side1.toggleCollapse();
     }
